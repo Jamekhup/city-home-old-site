@@ -1,0 +1,40 @@
+.adminLogin{
+    width:40%;
+    margin:70px auto 80px auto;
+    background-color: var(--bg);
+    padding:20px;
+}
+.adminLogin .logError{
+    color:red;
+}
+.adminLogin h1{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size:24px;
+    margin-bottom: 5px;
+}
+.adminLogin input{
+    width:100%;
+    padding:10px 4px;
+    margin-top:10px;
+    box-sizing: border-box;
+    outline: none;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+.adminLogin input[type="checkbox"]{
+    width:15px;
+}
+.adminLogin button{
+    background-color:var(--para);
+    color:#fff;
+    border:none;
+    padding:5px 20px;
+    cursor: pointer;
+    margin-top:10px;
+}
+@media screen and (max-width:710px){
+    .adminLogin{
+        width:85%;
+    }
+}

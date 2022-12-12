@@ -1,0 +1,79 @@
+.mainNav{
+    position:sticky;
+    top:0;
+}
+.regPage{
+    width:40%;
+    margin:60px auto 40px auto;
+    -webkit-box-shadow: 0px 0px 53px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 53px -27px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 53px -27px rgba(0,0,0,0.75);
+    padding:30px 20px;
+}
+.regPage h1{
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size:26px;
+    margin-bottom: 10px;
+}
+.regPage input{
+    width: 100%;
+    box-sizing: border-box;
+    width:100%;
+    box-sizing: border-box;
+    padding:8px 5px;
+    margin-top: 10px;
+    outline: none;
+    border:1px solid var(--bg);
+    border-radius: 5px;
+}
+.regPage button{
+    background-color: var(--bg);
+    border:none;
+    padding:6px 25px;
+    cursor: pointer;
+    color:#fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.regPage .row{
+    display: flex;
+    justify-content:space-between;
+}
+.regPage p{
+    font-size:14px;
+    margin-top:10px;
+    margin-bottom: 8px;
+}
+.regPage p a{
+    color:var(--bg);
+    text-decoration: none;
+}
+.regPage p a:hover{
+    text-decoration: underline;
+}
+.regPage .error{
+    color:red;
+    letter-spacing: 1px;
+    display: block;
+}
+
+@media screen and (max-width:1100px) {
+    .regPage{
+        width:60%;
+    }
+}
+@media screen and (max-width:900px) {
+    .regPage{
+        width:90%;
+    }
+    .regPage h1{
+        font-size: 20px;
+    }
+    .mobile{
+        position: sticky !important;
+        top:0 !important;
+        z-index: 1000;
+        background-color: #fff;
+    }
+}

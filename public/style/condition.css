@@ -1,0 +1,32 @@
+.condition{
+    width:60%;
+    margin:60px auto 0px auto;
+    height: 60vh;
+}
+.condition h1{
+    font-size:22px;
+    margin-bottom: 10px;
+}
+.condition p{
+    padding-bottom: 8px;
+}
+
+.condition button{
+    background-color: var(--bg);
+    color:#fff;
+    cursor: pointer;
+    border:none;
+    padding:4px 12px;
+}
+
+@media screen and (max-width:650px){
+    .condition{
+        width:80%;
+        margin:60px auto 0px auto;
+        height: 60vh;
+    }
+    .condition h1{
+        font-size:19px;
+        margin-bottom: 10px;
+    }
+}

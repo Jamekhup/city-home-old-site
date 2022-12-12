@@ -1,0 +1,1096 @@
+.mainNav{
+    position:sticky;
+    top:0;
+}
+.mainProperty{
+    width:100%;
+    margin-top:15px;
+    margin-bottom: 30px;
+    /* position: relative; */
+    height: auto;
+}
+.mainProperty #selectSearch{
+   
+    margin-bottom: 13px;
+    position: fixed;
+    margin-bottom: 40px;
+    z-index: 3;
+    background-color: #fff;
+    width:100%;
+    padding:20px 10px 16px 10px;
+    top:65px;
+    border-bottom:1px solid #ccc;
+}
+
+.mainProperty #selectSearch .ygTowns{
+    position:absolute;
+    background-color:#fff;
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    width:20.1%;
+    margin-top:4px;
+    border:1px solid #ccc;
+    color:#222;
+    font-size:14px;
+    padding-top:10px;
+    display: none;
+    background-color: #fff;
+}
+.mainProperty #selectSearch .ygTowns::before{
+    content:'';
+    width:18px;
+    height: 18px;
+    transform:rotate(45deg);
+    position: absolute;
+    /* border:1px solid #ccc; */
+    top:-8px;
+    left:5px;
+    background-color: #fff;
+    border-radius: 2px;
+  
+}
+
+
+.mainProperty #selectSearch .ygTowns li{
+    list-style-type: none;
+    padding:5px 10px;
+    cursor: pointer;
+    display:none;
+}
+
+
+.mainProperty .saleRent{
+    position: absolute;
+    left:22%;
+    color:#222;
+    font-size:14px;
+    padding-top:10px;
+    width:10.4%;
+    margin-top:4px;
+    display:none;
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    border:1px solid #ccc;
+    background-color: #fff;
+}
+
+.mainProperty .saleRent:before{
+    content:'';
+    width:18px;
+    background-color: #fff;
+    height: 18px;
+    transform:rotate(45deg);
+    position: absolute;
+    top:-8px;
+    left:5px;
+    border-radius: 2px;
+}
+.mainProperty .saleRent li{
+    list-style-type: none;
+    padding:5px 10px;
+    cursor: pointer;
+}
+.mainProperty .proType{
+    position: absolute;
+    left:33.8%;
+    color:#222;
+    font-size:14px;
+    padding-top:10px;
+    width:19.5%;
+    margin-top:4px;
+    display: none;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+}
+.mainProperty .proType::before{
+    content:'';
+    width:18px;
+    height: 18px;
+    transform:rotate(45deg);
+    position: absolute;
+    top:-8px;
+    left:5px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+.mainProperty .proType li{
+    list-style-type: none;
+    padding:5px 10px;
+    cursor: pointer;
+}
+
+
+.mainProperty #searchTown{
+    padding:10px 3px;
+    width:20%;
+    outline: none;
+    border-radius: 3px;
+    border:1px solid #868484;
+    margin-right:13px;
+}
+.mainProperty #searchSaleRent, .mainProperty #searchType{
+    padding:10px 3px;
+    width:10%;
+    outline: none;
+    border-radius: 3px;
+    border:1px solid #868484;
+    cursor: pointer;
+    margin-right:13px;
+}
+.mainProperty #selectSearch button{
+    background-color:var(--bg);
+    border:none;
+    padding:9px 30px;
+    cursor: pointer;
+    border:1px solid var(--bg);
+    color:#fff;
+    font-size:14px;
+    border-radius: 3px;
+}
+.mainProperty #selectSearch button:hover{
+    background-color:transparent;
+    border:1px solid var(--bg);
+    transition: 0.2s;
+    color:var(--para);
+}
+
+
+.proLists{
+    margin-left:10px;
+    margin-right: 10px;
+    padding:15px 0px 0px 0px;
+    position: static;
+    overflow:hidden;
+    margin-top:75px;
+}
+.proLists .row .notfound{
+    height: 50vh;
+    margin-top:50px;
+    margin-left:15px;
+}
+.proLists .row .notfound h3{
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+.proLists .row .notfound  a{
+    background-color:var(--bg);
+    padding:6px 15px;
+    text-decoration: none;
+    color:#fff;
+    cursor:pointer;
+}
+.proLists .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.proLists .sortLists{
+    width:20%;
+    padding-right:15px;
+    border-right: 1px solid var(--bg);
+    position: fixed;
+    height:100%;
+    /* z-index: -1; */
+}
+
+.proLists .sortLists #lowToHigh{
+    /* width:100%; */
+    padding:10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color:var(--bg);
+    border:none;
+    cursor: pointer;
+    color:#000;
+    font-size:14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.proLists .sortLists #highToLow{
+    padding:10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-color:var(--bg);
+    border:none;
+    cursor: pointer;
+    color:cyan;
+    font-size:14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.proLists .sortLists #highToLow:hover,
+.proLists .sortLists #lowToHigh:hover{
+    background-color:#0583ad;
+    transition: 0.3s;
+}
+.proLists .sortLists .viewList{
+    background-color:var(--para);
+    display: block;
+    margin-top:15px;
+    margin-bottom: 0px;
+    padding:10px 0px;
+    text-align: center;
+    color:#fff;
+    font-size:14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.proLists .sortLists p{
+    margin-bottom: 10px;
+}
+.proLists .sortLists .reg{
+    background-color:var(--bg);
+    text-decoration: none;
+    color:#fff;
+    padding:5px 10px;
+    margin-top:10px;
+    font-size:13px;
+}
+.proLists .sortLists .log{
+    background-color:var(--para);
+    text-decoration: none;
+    color:#fff;
+    padding:5px 10px;
+    margin-top:10px;
+    font-size:13px;
+}
+
+
+/* all list */
+.proLists .all_lists{
+    width:80%;
+    padding-left:15px;
+    position: relative;
+    left:21%;
+}
+.proLists .all_lists h1{
+    font-size:22px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
+}
+.proLists .all_lists h1 span{
+    margin-left:16px;
+    font-size:13px;
+    background-color: tomato;
+    padding:2px 10px;
+    border-radius: 25px;
+    color:#fff;
+}
+.proLists .all_lists .row{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.proLists .all_lists .row .col{
+    width:32%;
+    border-bottom: 3px solid var(--bg);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.proLists .all_lists .row .col a{
+    text-decoration: none;
+    color:var(--para);
+}
+.proLists .all_lists .row .col .list-bg{
+    height: 200px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.proLists .all_lists .row .col h4{
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.proLists .all_lists .row .col .list-bg span{
+    background-color:rgba(56, 54, 54,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    padding:4px 10px;
+    color:#fff;
+    font-size:14px;
+    letter-spacing: 1px;
+}
+.proLists .all_lists .row .col .info{
+    padding:8px 10px 12px 8px;
+}
+.proLists .all_lists .row .col .info .price #sortPrice{
+    font-size:20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter !important;
+}
+.proLists .all_lists .row .col .info .rooms{
+    font-size:15px;
+}
+.proLists .all_lists .row .col .info .types{
+    display: flex;
+    justify-content: flex-start;
+}
+.proLists .all_lists .row .col .info .types .listType1{
+    color:#fff;
+    background-color:#5D6D7E ;
+    padding:1px 10px;
+    border-radius: 5px;
+    font-size:12px;
+}
+.proLists .all_lists .row .col .info .types .listType2{
+    color:#fff;
+    background-color:tomato;
+    padding:1px 10px;
+    border-radius: 5px;
+    font-size:13px;
+    margin-left:8px;
+}
+.proLists .all_lists .row .col p{
+    padding:4px 0px;
+}
+
+@media screen and (max-width:1100px) {
+    .proLists .sortLists button,.proLists .sortLists .viewList{
+        font-size:12px;
+        padding:8px;
+    }
+    .proLists .sortLists p{
+        font-size:13px;
+    }
+    .proLists .all_lists .row .col{
+        width:49%;
+    }
+}
+@media screen and (max-width:800px) {
+   
+   .proLists .sortLists{
+       display: none;
+   }
+   .proLists .all_lists{
+       left:0;
+       width:100%;
+       padding-left:0;
+       overflow: hidden;
+   }
+   .proLists .all_lists .row .col{
+       width: 100%;
+   }
+ 
+    .mainProperty #searchTown{
+        padding:8px 3px;
+        width:25%;
+        outline: none;
+        border-radius: 3px;
+        border:1px solid #868484;
+        margin-right:10px;
+    }
+    .mainProperty #searchSaleRent, .mainProperty #searchType{
+        padding:8px 3px;
+        width:20%;
+        margin-right:10px;
+    }
+    .mainProperty #selectSearch button{
+        background-color:var(--bg);
+        border:none;
+        padding:8px 18px;
+        cursor: pointer;
+        color:#fff;
+        font-size:14px;
+        border-radius: 3px;
+    }
+    .mobile{
+        position: sticky !important;
+        top:0 !important;
+        z-index: 1000;
+        background-color: #fff;
+    }
+
+
+    .mainProperty #selectSearch .ygTowns{
+        width:51%;
+        margin-top:4px;
+        
+    }
+    .mainProperty .saleRent{
+        position: absolute;
+        left:30%;
+        background-color:var(--bg);
+        color:#fff;
+        font-size:14px;
+        padding-top:10px;
+        width:25%;
+        margin-top:4px;
+        display:none;
+    }
+
+    .mainProperty .proType{
+        left:54.2%;
+        width:41%;
+    }
+
+    .proLists .all_lists h1{
+        font-size:20px;
+    }
+    .proLists .all_lists h1 span{
+        font-size:13px;
+    }
+   
+
+}
+
+
+@media screen and (max-width:430px) {
+
+  
+    .mainProperty #searchTown{
+        padding:5px 3px;
+        width:80%;
+        outline: none;
+        border-radius: 3px;
+        border:1px solid #868484;
+        margin-right:10px;
+        margin-bottom: 5px;
+    }
+    .mainProperty #searchSaleRent, .mainProperty #searchType{
+        padding:5px 3px;
+        width:37.3%;
+        margin-right:10px;
+        margin-bottom: 5px;
+    }
+    .mainProperty #selectSearch button{
+        background-color:var(--bg);
+        border:none;
+        padding:4px 12px;
+        cursor: pointer;
+        font-size:13px;
+    }
+
+    .mainProperty #selectSearch .ygTowns{
+        width:60%;
+        margin-top:1px;
+        
+    }
+    .mainProperty .saleRent{
+        position: absolute;
+        left:0;
+        background-color:var(--bg);
+        color:#fff;
+        font-size:14px;
+        padding-top:10px;
+        width:30%;
+        margin-top:1px;
+        display:none;
+    }
+
+    .mainProperty .proType{
+        left:44.2%;
+        width:41%;
+    }
+    .mainProperty #selectSearch{
+        top:55px;
+    }
+   
+
+}
+
+
+
+/* popup listing details css */
+.closeDetail, .closeSingle{
+    position: fixed;
+    right:2%;
+    font-size:38px;
+    background-color:transparent;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+}
+
+.listDetail, .listDetail2{
+    position:fixed;
+    top:0;
+    height: 100%;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color:rgba(32, 31, 31,0.6);
+    z-index: 2000;
+    display:none;
+}
+.listDetail .detailInside, .listDetail2 .detailInside {
+    position:fixed;
+    top:0;
+    height: 100%;
+    left:5%;
+    right:5%;
+    background-color:#fff;
+}
+
+.listDetail .detailInside .row, .listDetail2 .detailInside .row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+.listDetail .detailInside .row .col1, .listDetail2 .detailInside .row .col1{
+    width:50%;
+    padding-left:15px;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right:15px;
+    overflow-y: scroll !important;
+    height: 100%;
+    position: fixed;
+}
+.listDetail .detailInside .row .col1::-webkit-scrollbar-thumb,
+.listDetail2 .detailInside .row .col1::-webkit-scrollbar-thumb{
+    width:5px;
+    background-color:var(--bg);
+}
+/* images */
+.listDetail .detailInside .row .col1 .mainImg,
+.listDetail2 .detailInside .row .col1 .mainImg{
+    width:100%;
+    height:360px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.listDetail .detailInside .row .col1 .row1,
+.listDetail2 .detailInside .row .col1 .row1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+.listDetail .detailInside .row .col1 .row1 .col,
+.listDetail2 .detailInside .row .col1 .row1 .col{
+    width:47%;
+    margin-bottom: 10px;
+    height:230px;
+    
+}
+.listDetail .detailInside .row .col1 .row1 .col div,
+.listDetail2 .detailInside .row .col1 .row1 .col div{
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+
+
+.listDetail .detailInside .row .col2,
+.listDetail2 .detailInside .row .col2{
+    width:39%;
+    padding-left:15px;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right:15px;
+    position:absolute;
+    right:0;
+}
+
+.listDetail .detailInside .row .col2 .row2,
+.listDetail2 .detailInside .row .col2 .row2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+
+.listDetail .detailInside .row .col2 .bed,
+.listDetail2 .detailInside .row .col2 .bed{
+    font-size:15px;
+    padding-left:0px;
+    padding-top:4px;
+}
+
+.listDetail .detailInside .row .col2 .itemDetail .address,
+.listDetail2 .detailInside .row .col2 .itemDetail .address{
+    font-size:16px;
+    margin-top:10px;
+    letter-spacing: 1px;
+}
+.itemDetail .rooms span{
+    font-size:14px;
+}
+
+.listDetail .detailInside .row .col2 .row2 h1,
+.listDetail2 .detailInside .row .col2 .row2 h1{
+    margin-top:-10px;
+    font-size:26px;
+    margin-bottom: 0px;
+}
+
+.listDetail .detailInside .row .col2 .row2 i,
+.listDetail2 .detailInside .row .col2 .row2 i{
+    cursor: pointer;
+    color:var(--bg);
+}
+/* share item */
+.listDetail .detailInside .row .col2 .row2 .shareItem,
+.listDetail2 .detailInside .row .col2 .row2 .shareItem{
+    position: absolute;
+    background-color:var(--para);
+    padding:10px 20px;
+    width:130px;
+    right:2%;
+    display: none;
+}
+.listDetail .detailInside .row .col2 .row2 .newShareItem,
+.listDetail2 .detailInside .row .col2 .row2 .newShareItem{
+    display: block;
+}
+.listDetail .detailInside .row .col2 .row2 .shareItem::before,
+.listDetail2 .detailInside .row .col2 .row2 .shareItem::before{
+    content:"";
+    width:14px;
+    height:14px;
+    background-color:var(--para);
+    transform: rotate(45deg);
+    position:absolute;
+    top:-4%;
+    right:2%;
+}
+.listDetail .detailInside .row .col2 .row2 .shareItem p,
+.listDetail .detailInside .row .col2 .row2 .shareItem a,
+.listDetail2 .detailInside .row .col2 .row2 .shareItem p,
+.listDetail2 .detailInside .row .col2 .row2 .shareItem a{
+    cursor: pointer;
+    color:#fff;
+    font-size:14px;
+    padding:8px 0px;
+    text-decoration: none;
+}
+.listDetail .detailInside .row .col2 .row2 .shareItem p:hover,
+.listDetail .detailInside .row .col2 .row2 .shareItem a:hover,
+.listDetail2 .detailInside .row .col2 .row2 .shareItem p:hover,
+.listDetail2 .detailInside .row .col2 .row2 .shareItem a:hover{
+    color:var(--bg);
+    transition:0.2s;
+}
+.listDetail .detailInside .row .col2 .price,
+.listDetail2 .detailInside .row .col2 .price{
+    font-size:24px;
+    margin-top:10px;
+    margin-bottom: 4px;
+}
+
+.listDetail .detailInside .row .col2 .price .bed,
+.listDetail2 .detailInside .row .col2 .price .bed{
+    font-size:11px !important;
+    margin-left:4px;
+}
+.listDetail .detailInside .row .col2 .address,
+.listDetail2 .detailInside .row .col2 .address{
+    font-size:15px;
+    letter-spacing: 1px;
+    margin-top:3px;
+    margin-bottom: 3px;
+}
+.listDetail .detailInside .row .col2 .row3,
+.listDetail2 .detailInside .row .col2 .row3{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+.listDetail .detailInside .row .col2 .row3 .sr small,
+.listDetail2 .detailInside .row .col2 .row3 .sr small{
+    width:6px;
+    height: 6px;
+    background-color:tomato;
+    color:tomato;
+    border-radius: 50%;
+    padding:2px 3px;
+    font-size:7px;
+    position: relative;
+    bottom:4px;
+}
+.listDetail .detailInside .row .col2 .row3 .sa,
+.listDetail2 .detailInside .row .col2 .row3 .sa{
+    background-color:rgb(0, 255, 191);
+    padding:1px 10px;
+    color:#222;
+    font-size:14px;
+    border-radius: 10px;
+}
+
+.listDetail .detailInside .row .col2 .row4,
+.listDetail2 .detailInside .row .col2 .row4{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.listDetail .detailInside .row .col2 .row4 .requestApply,
+.listDetail2 .detailInside .row .col2 .row4 .requestApply{
+    border:1px solid var(--bg);
+    padding:5px 20px;
+    color:var(--para);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.listDetail .detailInside .row .col2 .row4 .takeTour,
+.listDetail2 .detailInside .row .col2 .row4 .takeTour{
+    background-color: var(--bg);
+    padding:5px 20px;
+    color:#fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.listDetail .detailInside .row .col2  .moreDetail,
+.listDetail2 .detailInside .row .col2  .moreDetail{
+    width:100%;
+    position:relative;
+    height: 100vh;
+}
+.listDetail .detailInside .row .col2  .moreDetail .moreInside,
+.listDetail2 .detailInside .row .col2  .moreDetail .moreInside{
+    position: absolute;
+    overflow-y: scroll;
+    height: 60%;
+    z-index: 10;
+    width:100%;
+}
+
+.listDetail .detailInside .row .col2  .moreDetail li,
+.listDetail2 .detailInside .row .col2  .moreDetail li{
+    list-style-type: none;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 3px;
+    margin-top:20px;
+    color:var(--para);
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+.listDetail .detailInside .row .col2  .moreDetail li i,
+.listDetail2 .detailInside .row .col2  .moreDetail li i{
+    float:right;
+}
+
+
+.listDetail .detailInside .row .col2  .moreDetail #des p,
+.listDetail2 .detailInside .row .col2  .moreDetail #des p{
+    padding: 10px 0px;
+    font-size:15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px) {
+    .listDetail .detailInside .row .col2,
+    .listDetail2 .detailInside .row .col2{
+        width:35%;
+    }
+}
+
+@media screen and (max-width:820px) {
+    /* .listDetail{
+        height:90%;
+        position:relative;
+    } */
+   
+    .listDetail .detailInside,
+    .listDetail2 .detailInside{
+        position: fixed;
+        overflow-y: scroll;
+        /* bottom: 0; */
+        overflow-x: hidden;
+        /* height: 100vh; */
+    }
+    .listDetail .detailInside .row .col1,
+    .listDetail2 .detailInside .row .col1{
+        width:96%;
+        position: relative;
+        left:0;
+        overflow-y: hidden !important;
+    }
+    .listDetail .detailInside .row .col1 .mainImg,
+    .listDetail2 .detailInside .row .col1 .mainImg{
+        width:100%;
+    }
+
+    .listDetail .detailInside .row .col1 .row1 .col,
+    .listDetail2 .detailInside .row .col1 .row1 .col{
+        width:47%;
+        margin-bottom: 10px;
+    }
+
+  
+    .closeDetail,.closeSingle{
+        right:1%;
+        font-size:28px;
+    }
+
+
+    /* col 2 */
+    .listDetail .detailInside .row,
+    .listDetail2 .detailInside .row{
+        justify-content: start;
+    }
+    
+    .listDetail .detailInside .row .col2,
+    .listDetail2 .detailInside .row .col2{
+       width:95%;
+       position: relative;
+       bottom:0;
+    }
+   
+    .listDetail .detailInside .row .col2  .moreDetail .newFeet,
+    .listDetail2 .detailInside .row .col2  .moreDetail .newFeet{
+        margin-bottom: 10px;
+    }
+    .listDetail .detailInside .row .col2  .moreDetail,
+    .listDetail2 .detailInside .row .col2  .moreDetail{
+        height: auto;
+    }
+    .listDetail .detailInside .row .col2  .moreDetail .moreInside,
+    .listDetail2 .detailInside .row .col2  .moreDetail .moreInside{
+        position: relative;
+        overflow-y: hidden;
+        height: 100%;
+        z-index: 10;
+        width:100%;
+    }
+  
+}
+
+.listDetail .detailInside .row .pre,.listDetail .detailInside .row .next,
+.listDetail2 .detailInside .row .pre,.listDetail2 .detailInside .row .next{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .listDetail .detailInside .row .col1,
+    .listDetail2 .detailInside .row .col1{
+        position: relative;
+        height:240px;
+    }
+    .listDetail .detailInside .row .col1  .forMobile,
+    .listDetail2 .detailInside .row .col1  .forMobile,
+    .listDetail .detailInside .row .col1 .row1 .col  .forMobile,
+    .listDetail2 .detailInside .row .col1 .row1 .col .forMobile{
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom: 0;
+        background-size: cover;
+        background-position:center;
+        /* display:none; */
+        /* z-index: 10000; */
+    }
+    .listDetail .detailInside .row .col1 .row1 .col  .forMobile,
+    .listDetail2 .detailInside .row .col1 .row1 .col .forMobile{
+        display:none;
+    }
+    .listDetail .detailInside .row .pre,.listDetail .detailInside .row .next,
+    .listDetail2 .detailInside .row .pre,.listDetail2 .detailInside .row .next{
+        display: block;
+        position: absolute;
+        font-size:30px;
+        color:var(--bg);
+        cursor: pointer;   
+        top:20%;
+    }
+    .listDetail .detailInside .row .pre,
+    .listDetail2 .detailInside .row .pre{
+        left:3%;
+    }
+    .listDetail .detailInside .row .next,
+    .listDetail2 .detailInside .row .next{
+        right:3%;
+    }
+    
+}
+
+.shareEmailPop{
+    position: fixed;
+    background-color:var(--bg);
+    display: block;
+    padding:0px 15px 15px 15px;
+    right:29%;
+    left:29%;
+    top:10%;
+    z-index: 34000;
+    display: none;
+}
+.shareEmailPop .closeEmailShare{
+   float:right;
+   background-color: transparent;
+   border:none;
+   color:var(--para);
+   font-size:40px;
+   cursor: pointer;
+   margin:0;
+}
+.shareEmailPop .clear{
+    clear:both;
+}
+.shareEmailPop form input,
+.shareEmailPop form textarea{
+    width:100%;
+    box-sizing: border-box;
+    padding:10px 3px;
+    outline: none;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+.shareEmailPop form input{
+    margin-bottom: 10px;
+}
+.shareEmailPop form textarea{
+    margin-bottom: 0px;
+}
+.shareEmailPop form button{
+    background-color:var(--para);
+    border:none;
+    cursor: pointer;
+    padding:5px 15px;
+    color:#fff;
+}
+
+.requestToApply{
+    position:absolute;
+    background-color:#fff;
+    -webkit-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 18px -5px rgba(0,0,0,0.75);
+    padding:25px;
+    left:29%;
+    right:29%;
+    top:7%;
+    transform:scale(0);
+    transition:0.2s;
+}
+.newRequestToApply{
+    transform: scale(1);
+    transition:0.2s;
+}
+.requestToApply .closeRequestToApply, .requestTour .closeRequestTour{
+    position: absolute;
+    right:4%;
+    top:2%;
+    font-size:32px;
+    color:#222;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.requestToApply h3, .requestTour h3{
+    font-size:19px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.requestToApply p{
+    margin-bottom: 10px;
+    font-size:14px;
+}
+.requestToApply form textarea, .requestToApply form input{
+    width:100%;
+    outline: none;
+    border:1px solid var(--bg);
+    border-radius: 3px;
+    padding:10px 4px;
+    margin-top:8px;
+    box-sizing: border-box;
+}
+
+.requestToApply form button, .requestTour form button{
+    background-color:var(--para);
+    border:none;
+    color:#fff;
+    cursor: pointer;
+    padding:8px 20px;
+    margin-top:10px;
+}
+
+/* tour */
+.requestTour-main{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color:rgba(58, 56, 56,0.6);
+    transform: scale(0);
+    transition:0.2s;
+}
+.newRequestTour{
+    transform:scale(1);
+    transition:0.2s;
+}
+.requestTour{
+    position: absolute;
+    top:8%;
+    left:29%;
+    right:29%;
+    background-color: #fff;
+    padding:20px;
+}
+.requestTour form input,.requestTour form select{
+    width:100%;
+    box-sizing: border-box;
+    padding:10px 3px;
+    margin-top:10px;
+    outline: none;
+    border:1px solid var(--bg);
+    border-radius: 3px;
+}
+
+
+@media screen  and (max-width:820px){
+    .shareEmailPop{
+        
+        right:8%;
+        left:8%;
+       
+    }
+    .requestToApply,.requestTour{
+        left:8%;
+        right:8%;
+        /* width:60%; */
+    }
+}
+.loadIcon{
+    text-align: center;
+}
+.myicon{
+    width:60px;
+    height: 60px;
+}
+
+.shareEmailPop .emailShareErr{
+    color:red;
+    display: block;
+}
+.shareEmailPop .emailReturn, .requestToApply .rReturn ,.requestTour .tsuccess{
+    padding:8px;
+    color:#333;
+    background-color: #fff;
+    font-size:14px;
+    margin-top: 6px;
+}
+.requestToApply .rError, .requestTour .tErr{
+    color:red;
+    font-size:13px;
+    display: block;
+}

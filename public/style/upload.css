@@ -1,0 +1,164 @@
+.mainNav{
+    position:sticky;
+    top:0;
+}
+
+.uploadPage{
+    width:45%;
+    margin:50px auto 30px auto;
+    -webkit-box-shadow: 0px 0px 53px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 53px -27px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 53px -27px rgba(0,0,0,0.75);
+    padding:30px 20px;
+    padding:20px;
+}
+.uploadPage .ygTowns{
+    background-color:#fff;
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -6px rgba(0,0,0,0.75);
+    padding:15px 20px;
+    position: absolute;
+    width:300px;
+}
+.uploadPage .ygTowns::before{
+    content: "";
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+    position:absolute;
+    top:-1%;
+    transform: rotate(45deg);
+}
+.uploadPage .ygTowns li{
+    cursor: pointer;
+    padding:5px;
+    color:#222;
+}
+.uploadPage h1{
+    font-size:22px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+.uploadPage form input, .uploadPage form select,
+.uploadPage form textarea{
+    width:100%;
+    box-sizing: border-box;
+    padding:10px 3px;
+    margin-bottom:12px;
+    outline: none;
+    border:1px solid var(--bg);
+    border-radius: 4px;
+}
+
+
+.uploadPage .ygTowns{
+    display: none;
+}
+.uploadPage form label{
+    font-size:15px;
+    color:sienna;
+}
+.uploadPage form input[type="checkbox"]{
+    width:auto !important;
+}
+.uploadPage form a{
+    color:tomato;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size:14px;
+    text-decoration: none;
+}
+.uploadPage form a:hover{
+    text-decoration: underline;
+}
+.uploadPage form button{
+    border:none;
+    background-color: var(--para);
+    padding:5px 15px;
+    color:#fff;
+    border: 4px;
+    cursor: pointer;
+}
+
+.uploadPage .imgPreview{
+    width: 100%;
+}
+.uploadPage .imgPreview .row1{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+.uploadPage .imgPreview .row1 .col{
+    width:30%;
+    height:100px;
+    margin-bottom: 10px;
+    position:relative;
+}
+.uploadPage .imgPreview .row1 .col img{
+    width:100%;
+    height:100%;
+}
+/* .uploadPage .imgPreview .row1 .col span{
+    position:absolute;
+    top:0;
+    right:0;
+    font-size:30px;
+    color:red;
+    background-color:#222;
+    cursor: pointer;
+} */
+.uploadPage .col1{
+    display: flex;
+    justify-content:space-between;
+    width:100%;
+}
+.uploadPage .col1 div{
+    width:100%;
+    /* margin-right:20px; */
+}
+.uploadPage .col1 input{
+    box-sizing: border-box;
+    width:99.9%;
+}
+.uploadPage .uerr{
+    display: block;
+    color:red;
+    font-size:14px;
+}
+.uploadPage .returnSms{
+    margin-top: 10px;
+    position: relative;
+}
+.uploadPage .returnSms p{
+    padding:15px;
+    background-color:lightskyblue;
+    color:#222;
+    
+}
+.uploadPage .returnSms span{
+    position: absolute;
+    top:3px;
+    font-size:20px;
+    right:5px;
+    cursor: pointer;
+    color:#fff;
+}
+@media screen and (max-width:950px){
+    .uploadPage{
+        width:85%;
+    }
+    .uploadPage h1{
+        font-size:20px;
+    }
+}
+@media screen and (max-width:680px){
+   .uploadPage form label{
+        font-size:13px;
+    }
+    
+}
+@media screen and (max-width:470px){
+    
+}

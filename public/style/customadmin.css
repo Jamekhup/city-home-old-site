@@ -1,0 +1,56 @@
+.panel #pnhead{
+    background-color:teal;
+}
+.panel #pntitle{
+    color:whitesmoke;
+}
+.panel form .uerr{
+    color:red;
+    font-size:12px;
+}
+.returnSms .mysms{
+    color:#fff;
+    font-size:16px;
+    padding:10px;
+    background-color:lightseagreen;
+    margin-top:20px;
+}
+.panel #uploadPost .form-group .col-md-8 .imgPreview,
+.panel #editPost .form-group .col-md-8 .imgPreview{
+    width:100%;
+}
+.panel #uploadPost .form-group .col-md-8 .imgPreview .row1,
+.panel #editPost .form-group .col-md-8 .imgPreview .row1{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+.panel #uploadPost .form-group .col-md-8 .imgPreview .row1 .col,
+.panel #editPost .form-group .col-md-8 .imgPreview .row1 .col{
+    width:30%;
+    height:100px;
+    margin-bottom: 10px;
+    position:relative;
+}
+.panel #uploadPost .form-group .col-md-8 .imgPreview .row1 .col img,
+.panel #editPost .form-group .col-md-8 .imgPreview .row1 .col img{
+    width:100%;
+    height:100%;
+}
+.panel #uploadPost .form-group .col-md-8 .imgPreview .row1 .col span,
+.panel #editPost .form-group .col-md-8 .imgPreview .row1 .col span{
+    position:absolute;
+    top:1px;
+    right:1px;
+    font-size:30px;
+    color:red;
+    background-color:#222;
+    cursor: pointer;
+}
+
+@media screen and (max-width:840px) {
+    .panel #uploadPost #space,
+    .panel #editPost #space{
+        margin-bottom: 10px !important;
+    }
+}

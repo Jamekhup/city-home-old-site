@@ -1,0 +1,146 @@
+.homeMain{
+    margin:25px 20px;
+}
+.homeMain h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 28px;
+}
+.homeMain .row{
+    display: flex;
+    margin-top:30px;
+    margin-bottom: 20px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.homeMain .row .col{
+    width:30%;
+    -webkit-box-shadow: 0px 0px 53px -25px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 53px -25px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 53px -25px rgba(0,0,0,0.75);
+    padding-bottom: 20px;
+}
+.homeMain .row .col img{
+    width: 100%;
+    height: 260px;
+}
+.homeMain .row .col h3{
+    padding:0px 13px 6px 13px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.homeMain .row .col p{
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 20px;
+    line-height: 1.7;
+}
+.homeMain .row .col a{
+    border:1px solid var(--bg);
+    border-radius: 4px;
+    margin-left:13px;
+    padding:8px 38px;
+    color:var(--bg);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.homeMain .row .col div{
+    text-align: center;
+}
+.homeMain .row .col:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+.homeMain .row .col:hover a{
+    background-color: var(--bg);
+    color:#fff;
+    transition: 0.2s;
+}@media  screen and (max-width:1100px){
+    .homeMain .row .col img{
+        height: 200px ;
+    }
+}
+@media  screen and (max-width:710px) {
+    .homeMain .row .col{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .homeMain .row .col img {
+        height: 380px;
+    }
+}
+@media  screen and (max-width:640px){
+    .homeMain .row .col img {
+        height: 290px;
+    }
+    .homeMain .row .col a, .homeMain .row .col p{
+        font-size:15px;
+    }
+}
+
+#sub{
+    text-align: center;
+    margin:40px 0px;
+}
+#sub h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+#sub input{
+    width:25%;
+    padding:8px 3px;
+    outline: none;
+    border-radius: 3px;
+    border:1px solid var(--bg);
+}
+#sub button{
+    border:none;
+    background-color:var(--para);
+    padding:8px;
+    color:#fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.subErr small{
+    color:red;
+}
+.subErr span{
+    color:#22bb33;
+}
+.sub-success{
+    position:absolute;
+    background-color:var(--bg);
+    top:16%;
+    width:40%;
+    left:29.7%;
+    padding:10px;
+}
+.sub-success p{
+    color:#fff;
+    margin-right:20px;
+}
+.sub-success span{
+    position: absolute;
+    top:-6px;
+    right:4px;
+    font-size:26px;
+    cursor: pointer;
+}
+@media  screen and (max-width:640px){
+    #sub input{
+        width:65%;
+    }
+    .homeMain h1, #sub h2{
+        font-size:21px;
+    }
+    .homeMain .row .col h3{
+        font-size:19px;
+    }
+    #sub h2{
+        font-size:19px;
+    }
+    
+}
